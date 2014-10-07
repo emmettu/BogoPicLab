@@ -86,7 +86,7 @@ public class MainActivity extends Activity {
 		if(requestCode == CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE) {
 			TextView tv = (TextView) findViewById(R.id.status);
 			if(resultCode == RESULT_OK) {
-				if(data.getStringExtra("random message") != null) {
+				if(data != null) {
 					tv.setText( data.getStringExtra("random message")); 
 				}
 				else {
